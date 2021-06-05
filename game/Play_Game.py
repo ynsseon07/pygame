@@ -32,9 +32,6 @@ clock = pygame.time.Clock()
 
 # 1. 사용자 게임 초기화 (배경 화면, 게임 이미지, 좌표, 속도, 폰트 등)
 
-current_path = os.path.dirname(__file__) # 현재 파일의 위치 반환
-image_path = os.path.join(current_path, "images") # images 폴더 위치 반환
-
 # 배경 만들기
 background = pygame.image.load(resource_path("game/background.png"))
 
@@ -99,7 +96,7 @@ ball_to_remove = -1
 game_font = pygame.font.SysFont("arial", 40)
 
 # 시간 정보
-total_time = 100
+total_time = 30
 start_time = pygame.time.get_ticks() # 시작 시간 정의
 
 # 게임 종료 메시지
